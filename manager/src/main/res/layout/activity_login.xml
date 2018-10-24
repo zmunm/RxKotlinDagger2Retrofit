@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="vertical">
+    <!--android:background="@drawable/bg_intro"-->
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="730"
+        app:scale_base_width="1200">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="#fff"
+            app:scale_height="45"
+            app:scale_left="340"
+            app:scale_textsize="36"
+            app:scale_top="240"
+            app:scale_width="505" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="#fff"
+            app:scale_height="42"
+            app:scale_left="270"
+            app:scale_textsize="30"
+            app:scale_top="350"
+            app:scale_width="110" />
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#999"
+            android:fontFamily="sans-serif-light"
+            android:inputType="text"
+            android:paddingLeft="40px"
+            android:privateImeOptions="defaultInputmode=english"
+            android:textColorHint="#ccc"
+            app:scale_height="42"
+            app:scale_left="400"
+            app:scale_textsize="30"
+            app:scale_top="350"
+            app:scale_width="325" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="PW"
+            android:textColor="#fff"
+            app:scale_height="42"
+            app:scale_left="270"
+            app:scale_textsize="30"
+            app:scale_top="410"
+            app:scale_width="110" />
+        <!--비밀 번호 입력창-->
+        <EditText
+            android:id="@+id/user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#999"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPassword"
+            android:paddingLeft="40px"
+            android:privateImeOptions="defaultInputmode=english"
+            android:textColorHint="#ccc"
+            app:scale_height="42"
+            app:scale_left="400"
+            app:scale_textsize="30"
+            app:scale_top="410"
+            app:scale_width="325" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#999"
+            android:text="Sign in"
+            android:textColor="@color/common_white"
+            app:scale_height="105"
+            app:scale_left="760"
+            app:scale_textsize="25"
+            app:scale_top="350"
+            app:scale_width="80" />
+        <Button
+            android:id="@+id/btnLoginCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#999"
+            android:text="cancel"
+            android:textColor="@color/common_white"
+            app:scale_height="105"
+            app:scale_left="860"
+            app:scale_textsize="25"
+            app:scale_top="350"
+            app:scale_width="80" />
+
+        <CheckBox
+            android:id="@+id/auto_login_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#FF0000"
+            android:text="auto"
+            android:textColor="@color/common_white"
+            app:scale_height="80"
+            app:scale_left="400"
+            app:scale_textsize="27"
+            app:scale_top="470"
+            app:scale_width="230" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="자동 로그인"
+            android:visibility="invisible"
+            app:scale_height="90"
+            app:scale_left="110"
+            app:scale_textsize="51"
+            app:scale_width="300" />
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</LinearLayout>

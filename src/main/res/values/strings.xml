@@ -1,0 +1,5 @@
+<resources>
+    <string name="content_permission_rejected">권한을 불허하면 서비스를 사용할 수 없습니다.\n\n[설정] > [권한] 에서 권한을 허용하여 주십시오.</string>
+    <string name="btn_ok">확인</string>
+    <string name="btn_end">종료</string>
+</resources>
